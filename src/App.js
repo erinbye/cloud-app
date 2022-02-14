@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState } from "react";
 
 function App() {
+  const [ready, setReady] = useState(false);
+  const [number, setNumber] = useState(0);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      {ready ? (
+        <div>
+          <button
+            className="click-button"
+            onClick={() => setNumber(number + 1)}
+          >
+            How many nits could a nitin nit if a nitin could nit?
+          </button>
+          <p className="text">{number}</p>
+        </div>
+      ) : (
+        <div>
+          <p className="text">ARE YOU READY TO NIT?</p>
+          <button className="start-button" onClick={() => setReady(true)}>
+            YEAH!
+          </button>
+        </div>
+      )}
     </div>
   );
 }
