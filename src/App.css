@@ -1,6 +1,6 @@
 .container {
   text-align: center;
-  background-color: #282c34;
+  background-color: #f092f5;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
 }
 
 .click-button {
-  background-color: #f9877f;
+  background-color: #c808f9;
   width: 500px;
   height: 200px;
   font-size: 50px;
@@ -20,7 +20,7 @@
 }
 
 .start-button {
-  background-color: #f9877f;
+  background-color: #c808f9;
   width: 300px;
   height: 100px;
   font-size: 50px;
