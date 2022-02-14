@@ -1,0 +1,13 @@
+{
+   "metadata":{
+      "version":"1"
+   },
+   "name": "My Sample Repository",
+   "templates":[
+      {
+         "path":".",
+         "name":"My Sample 1",
+         "description":"The first sample of its name."
+      }
+   ]
+}
